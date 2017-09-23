@@ -1,11 +1,12 @@
 {
   "name": "stravels-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Landing web page for https://stravels.io",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "deploy": "surge ./src https://stravels.io"
+    "deploy:staging": "surge ./src https://stravels.surge.sh",
+    "deploy:prod": "surge ./src https://stravels.io"
   },
   "repository": {
     "type": "git",
