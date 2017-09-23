@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "deploy": "surge ./src https://stravels.io"
+    "deploy:staging": "surge ./src https://stravels.surge.sh",
+    "deploy:prod": "surge ./src https://stravels.io"
   },
   "repository": {
     "type": "git",
