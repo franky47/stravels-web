@@ -4,7 +4,8 @@
   "description": "Landing web page for https://stravels.io",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy": "surge ./src https://stravels.io"
   },
   "repository": {
     "type": "git",
