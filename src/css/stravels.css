@@ -1,0 +1,27 @@
+html, body {
+  background-color: #4CAF50; /* Material Green 500 */
+  color: white;
+}
+
+a {
+  color: #C8E6C9; /* Material Green 200 */
+}
+a:hover {
+  color: #E8F5E9; /* Material Green 100 */
+}
+
+/* -- */
+
+.title {
+  font-weight: 100;
+}
+.title > img {
+  vertical-align: bottom;
+}
+
+.catchphrase {
+
+}
+.description {
+  font-weight: 300;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "stravels-web",
+  "version": "0.0.1",
+  "description": "Landing web page for https://stravels.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "deploy": "surge ./src https://stravels.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franky47/stravels-web.git"
+  },
+  "author": "Francois Best <francoisbest@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franky47/stravels-web/issues"
+  },
+  "homepage": "https://github.com/franky47/stravels-web#readme",
+  "devDependencies": {
+    "surge": "^0.19.0"
+  }
+}
