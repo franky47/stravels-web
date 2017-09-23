@@ -10,13 +10,23 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/stravels.css">
+
+    <script>
+      function retinify (img, src) {
+        if (window.devicePixelRatio > 1.0) {
+          src = src.replace('.png', '@2x.png')
+          img.onload = null
+          img.src = src
+        }
+      }
+    </script>
   </head>
   <body>
       <div class="container">
           <div class="row">
             <div class="column" style="margin-top: 25%">
               <h2 class='title'>
-                <img src='img/logo-64.png'>
+                <img src='img/logo.png' onload='retinify(this, "img/logo.png")' width='64' height='64'>
                 Stravels
               </h2>
               <h1 class='catchphrase'>Share your travels made with Strava</h2>
