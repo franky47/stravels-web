@@ -4,6 +4,7 @@
   "description": "Landing web page for https://stravels.io",
   "main": "index.js",
   "scripts": {
+    "start": "live-server --open=./src",
     "test": "jest",
     "deploy:staging": "surge ./src https://stravels.surge.sh",
     "deploy:prod": "surge ./src https://stravels.io"
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/franky47/stravels-web#readme",
   "devDependencies": {
+    "live-server": "^1.2.0",
     "surge": "^0.19.0"
   }
 }
