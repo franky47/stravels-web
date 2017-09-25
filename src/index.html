@@ -9,14 +9,13 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/stravels.css">
+    <link rel="stylesheet" href="css/app.css">
 
     <script>
-      function retinify (img, src) {
+      function retinify (img) {
         if (window.devicePixelRatio > 1.0) {
-          src = src.replace('.png', '@2x.png')
           img.onload = null
-          img.src = src
+          img.src = src.replace('.png', '@2x.png')
         }
       }
     </script>
@@ -26,7 +25,7 @@
           <div class="row">
             <div class="column" style="margin-top: 25%">
               <h2 class='title'>
-                <img src='img/logo.png' onload='retinify(this, "img/logo.png")' width='64' height='64'>
+                <img src='img/logo.png' onload='retinify(this)' width='64' height='64'>
                 Stravels
               </h2>
               <h1>Share your travels made with Strava</h2>
