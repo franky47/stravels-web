@@ -15,7 +15,7 @@
     function retinify (img) {
       if (window.devicePixelRatio > 1.0) {
         img.onload = null
-        img.src = src.replace('.png', '@2x.png')
+        img.src = img.src.replace('.png', '@2x.png')
       }
     }
   </script>
