@@ -10,36 +10,37 @@
   <link rel='stylesheet' href='css/normalize.css'>
   <link rel='stylesheet' href='css/skeleton.css'>
   <link rel='stylesheet' href='css/app.css'>
-
-  <script>
-    function retinify (img) {
-      if (window.devicePixelRatio > 1.0) {
-        img.onload = null
-        img.src = img.src.replace('.png', '@2x.png')
-      }
-    }
-  </script>
 </head>
 <body>
   <a href='https://github.com/franky47/stravels'>
     <img
       style='position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;'
       src='img/fork-me-right-green.png'
+      srcset='img/fork-me-right-green@2x.png 2x'
       alt='Fork me on GitHub'
-      onload='retinify(this)'
     >
   </a>
   <div class='container'>
     <div class='row'>
       <div class='column' style='margin-top: 25%'>
         <h2 class='title'>
-          <img src='img/logo.png' onload='retinify(this)' width='64' height='64'>
+          <img
+            src='img/logo.png'
+            srcset='img/logo@2x.png 2x'
+            width='64'
+            height='64'
+          >
           Stravels
         </h2>
         <h1>Share your travels made with Strava</h1>
         <p class='description'>Coming soon for Android and iOS</p>
         <a href='https://developers.strava.com'>
-          <img src='img/poweredByStrava.png' onload='retinify(this)' width='100' height='43'>
+          <img
+            src='img/poweredByStrava.png'
+            srcset='img/poweredByStrava@2x.png 2x'
+            width='100'
+            height='43'
+          >
         </a>
       </div>
     </div>
